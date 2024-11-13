@@ -3,24 +3,24 @@ import Bellow from "./Bellow";
 function App() {
   const debates = [
     {
-      title: "batman",
-      description: "Marvels are awesome",
+      title: "Rohit Sharma",
+      description: "INDIA Wins",
     },
     {
-      title: "Coke TWO Pepsi",
-      description: "Coke is better",
+      title: "Luffy vs Kaido",
+      description: "Bajrangg Gunn",
     },
     {
       title: "React vs Angular",
       description: "React is better",
     },
     {
-      title: "Java two Kotlin",
-      description: "Kotlin is better",
+      title: "MERN vs MEAN",
+      description: "MERN is better",
     },
     {
-      title: "Coke vs Pepsi",
-      description: "Kotlin is better. This is changed!",
+      title: "Eknath Shinde vs Uddhav Thackeray",
+      description: "Ekanath Shinde Wons",
     },
   ];
 
