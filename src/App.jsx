@@ -3,11 +3,11 @@ import Bellow from "./Bellow";
 function App() {
   const debates = [
     {
-      title: "Marvels",
+      title: "batman",
       description: "Marvels are awesome",
     },
     {
-      title: "Coke vs Pepsi",
+      title: "Coke TWO Pepsi",
       description: "Coke is better",
     },
     {
@@ -15,7 +15,7 @@ function App() {
       description: "React is better",
     },
     {
-      title: "Java vs Kotlin",
+      title: "Java two Kotlin",
       description: "Kotlin is better",
     },
     {
@@ -27,7 +27,7 @@ function App() {
   return (
     debates && (
       <div className="flex justify-center items-center h-screen">
-        <Bellow data={debates} />
+        <Bellow data={debates} filterKeyword="" isOpen />
       </div>
     )
   );
