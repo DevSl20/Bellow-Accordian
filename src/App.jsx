@@ -3,7 +3,6 @@ import item from "./assets/item.json";
 
 function App() {
   return (
-    debates && (
       <div className="flex justify-center items-center min-h-screen my-10">
         <Bellow 
         data={item} 
@@ -13,7 +12,6 @@ function App() {
         onClick={(value) => console.log(value)}
         />
       </div>
-    )
   );
 }
 
