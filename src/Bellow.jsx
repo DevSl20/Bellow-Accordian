@@ -22,7 +22,8 @@ function Bellow({
           isOpen={isOpen}
           underline={underline}
           showWordCount={showWordCount}
-          onClick={onClick}
+          setLastClicked={setLastClicked}
+          // onClick={onClick}
           />
         ))}
     </div>
