@@ -1,7 +1,4 @@
-import React from "react";
-fetch("https://18-11-2024-wakati.devangsalvi21.workers.dev/")
-  .then((res) => res.json())
-  .then((data) => console.log(data));
+import React,{useState,useEffect} from 'react';
 
 function Accordion({
   title = "Title",
@@ -11,6 +8,25 @@ function Accordion({
   showWordCount = true,
   onClick = () => {},
 }) {
+  const [count, setCount] = useState(0);
+  const [click , setClick] = useState(false); //for re-rendering
+  useEffect(() => {
+
+  fetch("https://18-11-2024-wakati.devangsalvi21.workers.dev/", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      title: description,
+    }),
+  })
+    .then((res) => res.json())
+    .then((data) => {
+      setCount(data.wordsCount);
+      console.log(data.wordsCount);
+    });
+  });
   return (
     <details className="w-80 bg-stone-100 m-1 p-2 rounded" open={isOpen} onClick={() => onClick(title)}>
       <summary className={`cursor-pointer font-bold text-stone-900`}>
@@ -23,5 +39,7 @@ function Accordion({
     </details>
   );
 }
+
+
 
 export default Accordion;
