@@ -7,6 +7,7 @@ function Bellow({
   underline = true,
   showWordCount = false,
   onClick = () => {},
+  setLastClicked,
 }) {
   return (
     <div className="border-2 border-zinc-600 rounded-lg">
