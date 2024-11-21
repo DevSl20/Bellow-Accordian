@@ -18,7 +18,7 @@ function Accordion({
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      title: description,
+      text: description,
     }),
   })
     .then((res) => res.json())
